@@ -41,7 +41,7 @@
      <x>0</x>
      <y>0</y>
      <width>543</width>
-     <height>23</height>
+     <height>22</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu">
@@ -88,6 +88,7 @@
     <bool>false</bool>
    </attribute>
    <addaction name="actNew"/>
+   <addaction name="actionABout"/>
    <addaction name="actOpen"/>
    <addaction name="actClear"/>
    <addaction name="separator"/>
@@ -266,6 +267,21 @@
    </property>
    <property name="menuRole">
     <enum>QAction::TextHeuristicRole</enum>
+   </property>
+  </action>
+  <action name="actionABout">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/images/BLD.BMP</normaloff>:/images/images/BLD.BMP</iconset>
+   </property>
+   <property name="text">
+    <string>关于</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::AboutRole</enum>
    </property>
   </action>
  </widget>

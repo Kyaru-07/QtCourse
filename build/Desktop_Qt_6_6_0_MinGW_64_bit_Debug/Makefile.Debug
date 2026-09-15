@@ -750,7 +750,7 @@ debug/qwmainwind.o: ../../qwmainwind.cpp ../../qwmainwind.h \
 		C:/Qt/6.6.0/mingw_64/include/QtWidgets/qrubberband.h \
 		C:/Qt/6.6.0/mingw_64/include/QtCore/qabstractitemmodel.h \
 		C:/Qt/6.6.0/mingw_64/include/QtGui/qfontdatabase.h \
-		../../ui_qwmainwind.h \
+		ui_qwmainwind.h \
 		C:/Qt/6.6.0/mingw_64/include/QtCore/QVariant \
 		C:/Qt/6.6.0/mingw_64/include/QtGui/QAction \
 		C:/Qt/6.6.0/mingw_64/include/QtWidgets/QApplication \
@@ -774,13 +774,6 @@ debug/qwmainwind.o: ../../qwmainwind.cpp ../../qwmainwind.h \
 		C:/Qt/6.6.0/mingw_64/include/QtGui/qguiapplication.h \
 		C:/Qt/6.6.0/mingw_64/include/QtGui/qinputmethod.h \
 		C:/Qt/6.6.0/mingw_64/include/QtGui/qguiapplication_platform.h \
-		C:/Qt/6.6.0/mingw_64/include/QtWidgets/QButtonGroup \
-		C:/Qt/6.6.0/mingw_64/include/QtWidgets/qbuttongroup.h \
-		C:/Qt/6.6.0/mingw_64/include/QtWidgets/QHeaderView \
-		C:/Qt/6.6.0/mingw_64/include/QtWidgets/qheaderview.h \
-		C:/Qt/6.6.0/mingw_64/include/QtWidgets/qabstractitemview.h \
-		C:/Qt/6.6.0/mingw_64/include/QtWidgets/qabstractscrollarea.h \
-		C:/Qt/6.6.0/mingw_64/include/QtCore/qitemselectionmodel.h \
 		C:/Qt/6.6.0/mingw_64/include/QtWidgets/QMenu \
 		C:/Qt/6.6.0/mingw_64/include/QtWidgets/qmenu.h \
 		C:/Qt/6.6.0/mingw_64/include/QtWidgets/QMenuBar \
@@ -789,6 +782,7 @@ debug/qwmainwind.o: ../../qwmainwind.cpp ../../qwmainwind.h \
 		C:/Qt/6.6.0/mingw_64/include/QtWidgets/qstatusbar.h \
 		C:/Qt/6.6.0/mingw_64/include/QtWidgets/QTextEdit \
 		C:/Qt/6.6.0/mingw_64/include/QtWidgets/qtextedit.h \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/qabstractscrollarea.h \
 		C:/Qt/6.6.0/mingw_64/include/QtGui/qtextoption.h \
 		C:/Qt/6.6.0/mingw_64/include/QtGui/qtextcursor.h \
 		C:/Qt/6.6.0/mingw_64/include/QtGui/qtextformat.h \
@@ -811,8 +805,9 @@ debug/qwmainwind.o: ../../qwmainwind.cpp ../../qwmainwind.h \
 		C:/Qt/6.6.0/mingw_64/include/QtWidgets/QFontDialog \
 		C:/Qt/6.6.0/mingw_64/include/QtWidgets/qfontdialog.h \
 		C:/Qt/6.6.0/mingw_64/include/QtCore/QCoreApplication \
-		C:/Qt/6.6.0/mingw_64/include/QtWidgets/Qlabel \
-		C:/Qt/6.6.0/mingw_64/include/QtGui/QTextCharFormat
+		C:/Qt/6.6.0/mingw_64/include/QtGui/QTextCharFormat \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/QMessageBox \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/qmessagebox.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\qwmainwind.o ..\..\qwmainwind.cpp
 
 debug/qrc_res.o: debug/qrc_res.cpp 

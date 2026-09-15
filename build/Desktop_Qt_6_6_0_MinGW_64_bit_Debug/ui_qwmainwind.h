@@ -37,6 +37,7 @@ public:
     QAction *actFont;
     QAction *actNew;
     QAction *actToolbarLab;
+    QAction *actionABout;
     QWidget *centralWidget;
     QTextEdit *txtEdit;
     QMenuBar *menuBar;
@@ -117,6 +118,11 @@ public:
         actToolbarLab->setCheckable(true);
         actToolbarLab->setChecked(true);
         actToolbarLab->setMenuRole(QAction::TextHeuristicRole);
+        actionABout = new QAction(QWMainWind);
+        actionABout->setObjectName("actionABout");
+        actionABout->setEnabled(true);
+        actionABout->setIcon(icon3);
+        actionABout->setMenuRole(QAction::AboutRole);
         centralWidget = new QWidget(QWMainWind);
         centralWidget->setObjectName("centralWidget");
         txtEdit = new QTextEdit(centralWidget);
@@ -128,7 +134,7 @@ public:
         QWMainWind->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(QWMainWind);
         menuBar->setObjectName("menuBar");
-        menuBar->setGeometry(QRect(0, 0, 543, 23));
+        menuBar->setGeometry(QRect(0, 0, 543, 22));
         menu = new QMenu(menuBar);
         menu->setObjectName("menu");
         menu_2 = new QMenu(menuBar);
@@ -162,6 +168,7 @@ public:
         menu_3->addSeparator();
         menu_3->addAction(actToolbarLab);
         mainToolBar->addAction(actNew);
+        mainToolBar->addAction(actionABout);
         mainToolBar->addAction(actOpen);
         mainToolBar->addAction(actClear);
         mainToolBar->addSeparator();
@@ -244,6 +251,7 @@ public:
         actNew->setShortcut(QCoreApplication::translate("QWMainWind", "Ctrl+N", nullptr));
 #endif // QT_CONFIG(shortcut)
         actToolbarLab->setText(QCoreApplication::translate("QWMainWind", "\346\230\276\347\244\272\345\267\245\345\205\267\346\240\217\346\226\207\345\255\227\346\240\207\347\255\276", nullptr));
+        actionABout->setText(QCoreApplication::translate("QWMainWind", "\345\205\263\344\272\216", nullptr));
         menu->setTitle(QCoreApplication::translate("QWMainWind", "\346\226\207\344\273\266", nullptr));
         menu_2->setTitle(QCoreApplication::translate("QWMainWind", "\347\274\226\350\276\221", nullptr));
         menu_3->setTitle(QCoreApplication::translate("QWMainWind", "\346\240\274\345\274\217", nullptr));
